@@ -19,5 +19,5 @@ export const StyledInput = styled.input`
   background-color: #000;
   border: none;
   border-bottom: 1px solid #505050;
-  color: white;
+`
 `

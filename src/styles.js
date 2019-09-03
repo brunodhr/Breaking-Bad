@@ -7,11 +7,11 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     outline: none;
     font-family: 'Roboto', sans-serif;
+    color:#fff;
   }
   
   body {
     font-size: 14px;
-    color:#fff;
   }
 `
 

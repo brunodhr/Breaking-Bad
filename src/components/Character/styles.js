@@ -31,7 +31,6 @@ export const Name = styled.span`
   position: absolute;
   left: 5%;
   bottom: 10px;
-  color: #fff;
 `
 
 export const BirthdayBox = styled.div`
@@ -47,7 +46,6 @@ export const Status = styled.span`
   top: 10px;
   font-size: 14px;
   padding: 10px 30px;
-  color: #fff;
 `
 export const Birthday = styled.span`
   font-size: 14px;
@@ -68,7 +66,4 @@ export const StyledStar = styled.img`
   width: 15px;
   height: 15px;
   background-color: blue;
-  fill: red !important;
-  stroke: red;
-  color: red;
 `
