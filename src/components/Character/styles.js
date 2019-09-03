@@ -19,12 +19,14 @@ export const Card = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.3s;
-  opacity: 0.5;
-  border: 2px solid transparent;
-  &:hover {
-    opacity: 1;
-    border: 2px solid #61dbfb;
+  @media (min-width: 768px) {
+    transition: 0.3s;
+    opacity: 0.5;
+    border: 2px solid transparent;
+    &:hover {
+      opacity: 1;
+      border: 2px solid #61dbfb;
+    }
   }
 `
 export const Banner = styled.img`
