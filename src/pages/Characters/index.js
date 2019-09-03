@@ -22,27 +22,19 @@ const Characters = () => {
   }, [characters])
 
   return (
-    <>
-      <Layout>
-        <S.Title>Personagens</S.Title>
-        {loading ? (
-          'Carregando'
-        ) : (
-          <S.Container>
-            {characters &&
-              characters.map(character => (
-                <Character
-                  img={character.img}
-                  name={character.name}
-                  status={character.status}
-                  birthday={character.birthday}
-                  occupation={character.occupation}
-                />
-              ))}
-          </S.Container>
-        )}
-      </Layout>
-    </>
+    <Layout>
+      <S.Title>Personagens</S.Title>
+      {loading ? (
+        'Carregando'
+      ) : (
+        <S.Container>
+          {characters &&
+            characters.map((character, index) => (
+              <Character key={index} data={character} />
+            ))}
+        </S.Container>
+      )}
+    </Layout>
   )
 }
 
