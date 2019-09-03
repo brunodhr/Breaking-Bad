@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react'
-import Character from 'components/Character'
 import { useDispatch, useSelector } from 'react-redux'
-
 import { getCharacters } from 'store/thunks/characters'
+
+import Layout from 'components/Layout'
+import Character from 'components/Character'
+
+import * as S from './styles'
 
 const Characters = () => {
   const characters = useSelector(state => state.characters.characters)
@@ -20,16 +23,25 @@ const Characters = () => {
 
   return (
     <>
-      {loading ? (
-        'Carregando'
-      ) : (
-        <>
-          {characters &&
-            characters.map(character => (
-              <Character>{character.name}</Character>
-            ))}
-        </>
-      )}
+      <Layout>
+        <S.Title>Personagens</S.Title>
+        {loading ? (
+          'Carregando'
+        ) : (
+          <S.Container>
+            {characters &&
+              characters.map(character => (
+                <Character
+                  img={character.img}
+                  name={character.name}
+                  status={character.status}
+                  birthday={character.birthday}
+                  occupation={character.occupation}
+                />
+              ))}
+          </S.Container>
+        )}
+      </Layout>
     </>
   )
 }
