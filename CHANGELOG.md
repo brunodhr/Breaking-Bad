@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/brunodhr/Breaking-Bad/compare/v0.1.3...v0.1.4) (2019-09-03)
+
+
+### Bug Fixes
+
+* **Menu:** link to Characters ([d2345ec](https://github.com/brunodhr/Breaking-Bad/commit/d2345ec))
+
+
+### Features
+
+* **Character:** add animation to Card ([bd56044](https://github.com/brunodhr/Breaking-Bad/commit/bd56044))
+* **Menu:** add animation to logo ([3e8147a](https://github.com/brunodhr/Breaking-Bad/commit/3e8147a))
+* **Profile:** add animation to Photo ([effdf09](https://github.com/brunodhr/Breaking-Bad/commit/effdf09))
+* **Profile:** add responsive ([9e94dd3](https://github.com/brunodhr/Breaking-Bad/commit/9e94dd3))
+
 ### [0.1.3](https://github.com/brunodhr/Breaking-Bad/compare/v0.1.2...v0.1.3) (2019-09-03)
 
 
