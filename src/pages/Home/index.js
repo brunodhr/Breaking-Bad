@@ -1,11 +1,11 @@
 import React from 'react'
-import { Container, Link } from './styles'
+import * as S from './styles'
 
 const Home = () => (
   <>
-    <Container>
-      <Link href='/characters'>Characters</Link>
-    </Container>
+    <S.Container>
+      <S.StyledLink to='/characters'>Characters</S.StyledLink>
+    </S.Container>
   </>
 )
 
