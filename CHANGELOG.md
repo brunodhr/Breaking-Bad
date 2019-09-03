@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/brunodhr/Breaking-Bad/compare/v0.1.2...v0.1.3) (2019-09-03)
+
+
+### Bug Fixes
+
+* remove color white from styles and set to global style ([abfd39c](https://github.com/brunodhr/Breaking-Bad/commit/abfd39c))
+
+
+### Features
+
+* **Home:** wrapped with Layout ([f727958](https://github.com/brunodhr/Breaking-Bad/commit/f727958))
+* **Menu:** add link to Characters list ([8921770](https://github.com/brunodhr/Breaking-Bad/commit/8921770))
+
 ### [0.1.2](https://github.com/brunodhr/Breaking-Bad/compare/v0.1.1...v0.1.2) (2019-09-03)
 
 
