@@ -10,6 +10,11 @@ export const Menu = styled.div`
 export const StyledLogo = styled.img`
   width: 80px;
   height: 80px;
+  transition: 0.3s;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
 `
 
 export const StyledInput = styled.input`
