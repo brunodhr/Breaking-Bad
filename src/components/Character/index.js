@@ -4,30 +4,28 @@ import star from 'star.svg'
 
 import * as S from './styles'
 
-const Character = ({ img, name, birthday, occupation, status }) => {
+const Character = ({ data }) => {
   return (
     <S.Container>
-      <S.Card to='/character/:id'>
-        <S.Status status={status}>
-          {status === 'Alive' ? 'Vivo' : 'Morto'}
+      <S.Card to={{ pathname: `/character/${data.char_id}`, state: { data } }}>
+        <S.Status status={data.status}>
+          {data.status === 'Alive' ? 'Vivo' : 'Morto'}
         </S.Status>
-        <S.Banner src={img} />
-        <S.Name>{name}</S.Name>
+        <S.Banner src={data.img} />
+        <S.Name>{data.name}</S.Name>
       </S.Card>
       <S.Infos>
-        {birthday !== 'Unknown' ? (
+        {data.birthday !== 'Unknown' ? (
           <S.BirthdayBox>
             <S.StyledStar src={star} alt='' />
-            <S.Birthday>{birthday !== 'Unknown' ? birthday : ''}</S.Birthday>
+            <S.Birthday>{data.birthday}</S.Birthday>
           </S.BirthdayBox>
         ) : (
           ''
         )}
 
         <S.Occupations>
-          {occupation.map(o => (
-            <>{o}, </>
-          ))}
+          {data.occupation ? data.occupation.toString() : ''}
         </S.Occupations>
       </S.Infos>
     </S.Container>
@@ -35,17 +33,11 @@ const Character = ({ img, name, birthday, occupation, status }) => {
 }
 
 Character.defaultProps = {
-  children: '',
-  img: '',
-  name: '',
-  birthday: ''
+  data: {}
 }
 
 Character.propTypes = {
-  children: PropTypes.string,
-  img: PropTypes.string,
-  name: PropTypes.string,
-  birthday: PropTypes.string
+  data: PropTypes.object
 }
 
 export default Character
