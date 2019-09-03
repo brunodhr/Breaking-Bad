@@ -10,6 +10,7 @@ const Menu = ({ showInput }) => (
     <Link to='/'>
       <S.StyledLogo src={logo} alt='logo' />
     </Link>
+    <S.StyledLink to='characters'>Characters</S.StyledLink>
     {showInput ? <S.StyledInput placeholder='Pesquise os personagens' /> : ''}
   </S.Menu>
 )

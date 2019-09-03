@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Menu = styled.div`
   display: flex;
@@ -20,4 +21,13 @@ export const StyledInput = styled.input`
   border: none;
   border-bottom: 1px solid #505050;
 `
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #61dbfb;
+  transition: 0.3s;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
 `
