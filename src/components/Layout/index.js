@@ -1,14 +1,13 @@
 import React from 'react'
-import logo from 'logo.svg'
+
+import Menu from 'components/Menu'
+
 import * as S from './styles'
 
-const Layout = ({ children }) => (
+const Layout = ({ children, showInput }) => (
   <>
     <S.Container>
-      <S.Menu>
-        <S.StyledLogo src={logo} alt='logo' />
-        <S.StyledInput placeholder='Pesquise os personagens' />
-      </S.Menu>
+      <Menu showInput={showInput} />
       {children}
     </S.Container>
   </>
