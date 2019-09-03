@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/brunodhr/Breaking-Bad/compare/v0.1.1...v0.1.2) (2019-09-03)
+
+
+### Bug Fixes
+
+* add default logos ([aeccf18](https://github.com/brunodhr/Breaking-Bad/commit/aeccf18))
+
+
+### Features
+
+* **Menu:** removed from Layout and create component ([268f579](https://github.com/brunodhr/Breaking-Bad/commit/268f579))
+* **Profile:** default page ([7fdad0b](https://github.com/brunodhr/Breaking-Bad/commit/7fdad0b))
+
 ### 0.1.1 (2019-09-03)
 
 
