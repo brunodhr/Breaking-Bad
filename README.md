@@ -1,4 +1,4 @@
-[CHANGELOG](https://github.com/brunodhr/Breaking-Bad/blob/master/README.md).
+[CHANGELOG](https://github.com/brunodhr/Breaking-Bad/blob/master/CHANGELOG.md).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
