@@ -19,6 +19,13 @@ export const Card = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
+  opacity: 0.5;
+  border: 2px solid transparent;
+  &:hover {
+    opacity: 1;
+    border: 2px solid #61dbfb;
+  }
 `
 export const Banner = styled.img`
   height: 300px;
@@ -65,5 +72,5 @@ export const Infos = styled.div`
 export const StyledStar = styled.img`
   width: 15px;
   height: 15px;
-  background-color: blue;
+  background-color: #61dbfb;
 `
