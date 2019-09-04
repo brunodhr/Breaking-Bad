@@ -14,7 +14,7 @@ const Characters = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(getCharacters())
+    dispatch(getCharacters({ limit: 8, offset: 0 }))
   }, [dispatch])
 
   useEffect(() => {
