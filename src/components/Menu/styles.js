@@ -20,6 +20,12 @@ export const StyledLogo = styled.img`
   }
 `
 
+export const SearchBar = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+`
+
 export const StyledInput = styled.input`
   height: 30px;
   width: 100%;
@@ -37,6 +43,21 @@ export const StyledInput = styled.input`
   ::placeholder {
     opacity: 0.3;
     color: #61dbfb;
+  }
+`
+
+export const SearchIcon = styled.svg`
+  cursor: pointer;
+  fill: #61dbfb;
+  padding: 2px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0px;
+  transition: 0.3s;
+  opacity: 0.5;
+  ${SearchBar}:hover & {
+    opacity: 1;
   }
 `
 
