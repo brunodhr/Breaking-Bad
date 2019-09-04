@@ -15,7 +15,7 @@ const Toogle = () => {
   return (
     <S.Container>
       <S.WrapperToogle>
-        <S.SliderToogle type='checkbox' checked={spoiler} />
+        <S.SliderToogle type='checkbox' defaultChecked={spoiler} />
         <S.Toogle onClick={toogle} />
       </S.WrapperToogle>
       <S.Text>Spoiler</S.Text>
