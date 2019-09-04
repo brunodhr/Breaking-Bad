@@ -1,10 +1,12 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 import Layout from 'components/Layout'
 
 import * as S from './styles'
 
 const Profile = props => {
+  const spoiler = useSelector(state => state.spoiler.spoiler)
   const char = props.location.state.data
   return (
     <Layout showInput={false}>
@@ -28,10 +30,16 @@ const Profile = props => {
           <h3>{char.occupation.toString()}</h3>
           <h1>Ator</h1>
           <h3>{char.portrayed}</h3>
-          <h1>Status</h1>
-          <h3>{char.status === 'Alive' ? 'Vivo' : 'Morto'}</h3>
-          <h1>Temporadas em que apareceu</h1>
-          <h3>{char.appearance.toString()}</h3>
+          {spoiler ? (
+            <>
+              <h1>Status</h1>
+              <h3>{char.status === 'Alive' ? 'Vivo' : 'Morto'}</h3>
+              <h1>Temporadas</h1>
+              <h3>{char.appearance.toString()}</h3>
+            </>
+          ) : (
+            ''
+          )}
         </S.Container>
       </S.Wrapper>
     </Layout>
