@@ -21,7 +21,6 @@ const Menu = ({ showLink, showInput }) => {
       {showLink ? <S.StyledLink to='/'>Characters</S.StyledLink> : ''}
       {showInput ? (
         <S.SearchBar>
-          <S.StyledInput placeholder='Pesquise os personagens' />
           <S.StyledInput placeholder='Pesquise' />
           <S.SearchIcon onClick={search}>
             <svg viewBox='0 0 512 512'>

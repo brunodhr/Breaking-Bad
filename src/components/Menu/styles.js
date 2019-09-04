@@ -41,7 +41,7 @@ export const StyledInput = styled.input`
     opacity: 1;
   }
   ::placeholder {
-    opacity: 0.3;
+    opacity: 0.6;
     color: #61dbfb;
   }
 `
