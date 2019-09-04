@@ -4,10 +4,10 @@ import Menu from 'components/Menu'
 
 import * as S from './styles'
 
-const Layout = ({ children, showInput }) => (
+const Layout = ({ children, showLink, showInput }) => (
   <>
     <S.Container>
-      <Menu showInput={showInput} />
+      <Menu showLink={showLink} showInput={showInput} />
       {children}
     </S.Container>
   </>

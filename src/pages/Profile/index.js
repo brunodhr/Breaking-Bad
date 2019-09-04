@@ -28,7 +28,7 @@ const Profile = props => {
           <h3>{char.nickname}</h3>
           <h1>Profissões</h1>
           <h3>{char.occupation.toString()}</h3>
-          <h1>Ator</h1>
+          <h1>Ator(a)</h1>
           <h3>{char.portrayed}</h3>
           {spoiler ? (
             <>

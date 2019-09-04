@@ -22,7 +22,7 @@ const Characters = () => {
   }, [characters])
 
   return (
-    <Layout>
+    <Layout showLink={false}>
       <S.Title>Personagens</S.Title>
       {loading ? (
         'Carregando'

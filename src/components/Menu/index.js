@@ -8,25 +8,27 @@ import Toogle from 'components/Toogle'
 
 import * as S from './styles'
 
-const Menu = ({ showInput }) => {
+const Menu = ({ showLink, showInput }) => {
   return (
     <S.Menu>
       <Link to='/'>
         <S.StyledLogo src={logo} alt='logo' />
       </Link>
       <Toogle />
-      <S.StyledLink to='/'>Characters</S.StyledLink>
+      {showLink ? <S.StyledLink to='/'>Characters</S.StyledLink> : ''}
       {showInput ? <S.StyledInput placeholder='Pesquise os personagens' /> : ''}
     </S.Menu>
   )
 }
 
 Menu.defaultProps = {
-  showInput: true
+  showInput: true,
+  showLink: true
 }
 
 Menu.propTypes = {
-  showInput: PropTypes.bool
+  showInput: PropTypes.bool,
+  showLink: PropTypes.bool
 }
 
 export default Menu
