@@ -5,6 +5,9 @@ export const Menu = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: 320px) and (max-width: 425px) {
+    flex-direction: column;
+  }
 `
 
 export const StyledLogo = styled.img`
@@ -34,5 +37,8 @@ export const StyledLink = styled(Link)`
   opacity: 0.5;
   &:hover {
     opacity: 1;
+  }
+  @media (min-width: 320px) and (max-width: 425px) {
+    padding: 20px;
   }
 `
