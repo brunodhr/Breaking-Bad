@@ -71,8 +71,8 @@ export const Infos = styled.div`
   padding: 10px;
 `
 
-export const StyledStar = styled.img`
+export const StyledStar = styled.svg`
   width: 15px;
   height: 15px;
-  background-color: #61dbfb;
+  fill: #61dbfb;
 `
