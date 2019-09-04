@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/brunodhr/Breaking-Bad/compare/v0.1.4...v0.1.5) (2019-09-04)
+
+
+### Bug Fixes
+
+* **Character:** removed opacity for mobile/tablet ([c32c1a9](https://github.com/brunodhr/Breaking-Bad/commit/c32c1a9))
+
+
+### Features
+
+* **Character:** handle spoiler ([f068841](https://github.com/brunodhr/Breaking-Bad/commit/f068841))
+* **Menu:** add Toogle and responsivity ([2072bb9](https://github.com/brunodhr/Breaking-Bad/commit/2072bb9))
+* **Toogle:** sample toogle for spoilers ([7434f94](https://github.com/brunodhr/Breaking-Bad/commit/7434f94))
+
 ### [0.1.4](https://github.com/brunodhr/Breaking-Bad/compare/v0.1.3...v0.1.4) (2019-09-03)
 
 
