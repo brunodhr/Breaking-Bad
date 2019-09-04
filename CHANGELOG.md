@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/brunodhr/Breaking-Bad/compare/v0.1.6...v0.1.7) (2019-09-04)
+
+
+### Bug Fixes
+
+* **Character:** removed background to star icon ([5c723b0](https://github.com/brunodhr/Breaking-Bad/commit/5c723b0))
+* **Toogle:** changed name for checked to fix react error ([2a29c52](https://github.com/brunodhr/Breaking-Bad/commit/2a29c52))
+
+
+### Features
+
+* **Character:** add paginate to list ([45072ae](https://github.com/brunodhr/Breaking-Bad/commit/45072ae))
+* **Menu:** add Icon and styles to searchbar ([cd8845b](https://github.com/brunodhr/Breaking-Bad/commit/cd8845b))
+* **Menu:** add style to searchbar ([1f67fe4](https://github.com/brunodhr/Breaking-Bad/commit/1f67fe4))
+
 ### [0.1.6](https://github.com/brunodhr/Breaking-Bad/compare/v0.1.5...v0.1.6) (2019-09-04)
 
 
