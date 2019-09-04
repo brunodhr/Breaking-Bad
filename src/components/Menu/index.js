@@ -15,7 +15,7 @@ const Menu = ({ showInput }) => {
         <S.StyledLogo src={logo} alt='logo' />
       </Link>
       <Toogle />
-      <S.StyledLink to='/characters'>Characters</S.StyledLink>
+      <S.StyledLink to='/'>Characters</S.StyledLink>
       {showInput ? <S.StyledInput placeholder='Pesquise os personagens' /> : ''}
     </S.Menu>
   )
