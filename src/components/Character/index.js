@@ -16,7 +16,7 @@ const Character = ({ data }) => {
         ) : (
           ''
         )}
-        <S.Banner src={data.img} />
+        <S.Banner src={data.img} alt='Character Photo' />
         <S.Name>{data.name}</S.Name>
       </S.Card>
       <S.Infos>

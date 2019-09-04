@@ -11,7 +11,7 @@ const Profile = props => {
   return (
     <Layout showInput={false}>
       <S.Wrapper>
-        <S.Photo src={char.img} alt='' />
+        <S.Photo src={char.img} alt='Character Photo' />
         <S.Container>
           <h1>Nome</h1>
           <h3>{char.name}</h3>
