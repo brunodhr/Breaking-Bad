@@ -27,7 +27,17 @@ export const StyledInput = styled.input`
   padding: 10px;
   background-color: #000;
   border: none;
-  border-bottom: 1px solid #505050;
+  border-bottom: 1px solid #61dbfb;
+  color: #61dbfb;
+  transition: 0.3s;
+  opacity: 0.5;
+  &:focus {
+    opacity: 1;
+  }
+  ::placeholder {
+    opacity: 0.3;
+    color: #61dbfb;
+  }
 `
 
 export const StyledLink = styled(Link)`
