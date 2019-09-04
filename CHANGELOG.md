@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/brunodhr/Breaking-Bad/compare/v0.1.5...v0.1.6) (2019-09-04)
+
+
+### Bug Fixes
+
+* **Toogle:** add checked attribute for checkbox ([d4d855b](https://github.com/brunodhr/Breaking-Bad/commit/d4d855b))
+
+
+### Features
+
+* **Characters:** started pagination ([741d08a](https://github.com/brunodhr/Breaking-Bad/commit/741d08a))
+* **Menu:** handle link to Characters page ([1c83b62](https://github.com/brunodhr/Breaking-Bad/commit/1c83b62))
+* **Profile:** handle spoiler ([05a29e6](https://github.com/brunodhr/Breaking-Bad/commit/05a29e6))
+
 ### [0.1.5](https://github.com/brunodhr/Breaking-Bad/compare/v0.1.4...v0.1.5) (2019-09-04)
 
 
