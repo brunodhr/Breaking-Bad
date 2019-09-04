@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getCharacters } from 'store/thunks/characters'
 
@@ -10,16 +10,25 @@ import * as S from './styles'
 const Characters = () => {
   const characters = useSelector(state => state.characters.characters)
   const loading = useSelector(state => state.characters.loading)
-
   const dispatch = useDispatch()
 
-  useEffect(() => {
-    dispatch(getCharacters({ limit: 8, offset: 0 }))
-  }, [dispatch])
+  var [offset, setOffset] = useState(0)
 
   useEffect(() => {
-    console.log(characters)
-  }, [characters])
+    dispatch(getCharacters({ offset: 0 }))
+  }, [dispatch])
+
+  function previous() {
+    offset = offset - 8
+    setOffset(offset)
+    dispatch(getCharacters({ offset: offset }))
+  }
+
+  function next() {
+    offset = offset + 8
+    setOffset(offset)
+    dispatch(getCharacters({ offset: offset }))
+  }
 
   return (
     <Layout showLink={false}>
@@ -27,12 +36,20 @@ const Characters = () => {
       {loading ? (
         'Carregando'
       ) : (
-        <S.Container>
-          {characters &&
-            characters.map((character, index) => (
-              <Character key={index} data={character} />
-            ))}
-        </S.Container>
+        <>
+          <S.Container>
+            {characters &&
+              characters.map((character, index) => (
+                <Character key={index} data={character} />
+              ))}
+          </S.Container>
+          <S.Paginate>
+            {offset !== 0 && <S.Button onClick={previous}>Anterior</S.Button>}
+            {characters.length === 8 && (
+              <S.Button onClick={next}>Próxima</S.Button>
+            )}
+          </S.Paginate>
+        </>
       )}
     </Layout>
   )
